@@ -19,7 +19,7 @@ lazy val app = project
     Test / javaOptions ++= Seq(
       "-Dfoo=123"
     ),
-    Test / fork := false,
+    Test / fork := true,
     Test / parallelExecution := false,
     //Test / testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oDF"),
   )
